@@ -55,9 +55,8 @@ plugins {
 }
 
 android {
-    namespace = "com.example.projet_code_qr" // Le nom de ton package
-    compileSdk = 33 // Remplace par la version appropriée si nécessaire
-    ndkVersion = "21.4.7075529" // Optionnel, tu peux l'ajuster selon tes besoins
+    namespace = 'com.example.qr_code_scanner'  // Specify the namespace for the package
+    compileSdk = 33
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -69,19 +68,12 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.projet_code_qr"
-        minSdkVersion = 21 // Choisis la version minimale de SDK Android
-        targetSdkVersion = 33 // Version cible du SDK
-        versionCode = 1
-        versionName = "1.0"
-    }
-
-    buildTypes {
-        release {
-            signingConfig = signingConfigs.debug
-        }
+        minSdkVersion = 21
+        targetSdkVersion = 33
     }
 }
+
+
 
 flutter {
     source = "../.."
